@@ -1,0 +1,28 @@
+# Default ignored files
+/shelf/
+
+
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+/zadaniye_1/cmake-build-debug
+/misc.xml
+/modules.xml
+/vcs.xml
+/workspace.xml
+/zadaniye_1.iml
+
+/.idea
+/cmake-build-debug
+/Zadaniye_3/.idea
+/Zadaniye_3/cmake-build-debug
+
+/lab5/.idea
+/lab5/cmake-build-debug
+/2/.idea
+/2/cmake-build-debug
+/lab6
+
+/lab9

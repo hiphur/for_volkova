@@ -35,6 +35,7 @@ public:
     const int& operator[](int index) const;
 
     void sort();
+
     int sumAll();
     int sumOfPositiveElements();
     int elementsInRangeCount(const int a, const int b);
@@ -101,11 +102,12 @@ const int& CustomIntArr::operator[](int index) const{
 
 }
 void CustomIntArr::swap(const int index1, const int index2){
+
     if(index1 < m_size && index1 >= 0
        && index2 < m_size && index2 >= 0 ){
         int t = m_arr[index1];
         m_arr[index1] = m_arr[index2];
-        m_arr[index2] = m_arr[index1];
+        m_arr[index2] = t;
     }
     else{
         throw std::invalid_argument("index is not in range");
@@ -117,7 +119,7 @@ void CustomIntArr::sort() {
 
         for (int i = 0; i < m_size - step - 1; ++i) {
             if (m_arr[i] > m_arr[i + 1]) {
-                swap(m_arr[i], m_arr[i+1]);
+                swap(i, i+1);
 //                int temp = m_arr[i];
 //                m_arr[i] = m_arr[i + 1];
 //                m_arr[i + 1] = temp;
@@ -144,15 +146,14 @@ int CustomIntArr::sumOfPositiveElements(){
 
 
 int CustomIntArr::elementsInRangeCount(const int a, const int b){
-    int left = std::max(a, 0);
-    int right = std::min(b, m_size);
-
-    if (left <= right) {
-        return (right - left);
+    int countElements = 0;
+    for(int i = 0; i < m_size; i++){
+        if(m_arr[i] >= a
+        && m_arr[i] <= b){
+            countElements++;
+        }
     }
-    else{
-        return 0;
-    }
+    return countElements;
 }
 int CustomIntArr::evenNumberCount() {
     int count = 0;

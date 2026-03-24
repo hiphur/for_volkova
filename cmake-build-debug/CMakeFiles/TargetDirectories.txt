@@ -1,3 +1,0 @@
-C:/Users/user/Documents/3rd_semester_homework/zadaniye_1/cmake-build-debug/CMakeFiles/zadaniye_1.dir
-C:/Users/user/Documents/3rd_semester_homework/zadaniye_1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/user/Documents/3rd_semester_homework/zadaniye_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

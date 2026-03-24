@@ -13,6 +13,12 @@
 /lab9/cmake-build-debug
 /П_1_4lab/.idea
 /П_1_4lab/cmake-build-debug
+cmake-build-debug/
+.idea/
+*.exe
+*.obj
+cmake-build-debug/
+.idea/
 
 /Zadaniye_3/.idea
 /Zadaniye_3/cmake-build-debug

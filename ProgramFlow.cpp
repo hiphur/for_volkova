@@ -32,7 +32,7 @@ void ProgramFlow::run(){
     CustomIntArr* a = new CustomIntArr(arrSize);
 
     cout << "filling in an array from file\n";
-    a->readFromFile("C:\\Users\\user\\Documents\\3rd_semester_homework\\zadaniye_1\\numbers.txt", arrSize);
+    a->readFromFile("numbers.txt", arrSize);
     printCustomArr(*a);
 
     cout << "max and min\n";
@@ -61,12 +61,10 @@ void ProgramFlow::run(){
     cout << "average\n";
     cout << a->average() << endl;
 
-    cout << "elementsInRangeCount 4, 100000\n";
-    cout << a->elementsInRangeCount(4, 100000) << endl;
-    cout << "elementsInRangeCount -8, 100000\n";
-    cout << a->elementsInRangeCount(-8, 100000) << endl;
-    cout << "elementsInRangeCount 2, 5\n";
-    cout << a->elementsInRangeCount(2, 5) << endl;
+    cout << "elementsInRangeCount -10, 10\n";
+    cout << a->elementsInRangeCount(-10, 10) << endl;
+
+
 
 }
 

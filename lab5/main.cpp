@@ -5,8 +5,8 @@
 #include "MonsterB.h"
 #include "MonsterC.h"
 int main() {
-    int monsterSize = 3;
-    BaseMonster  monsters[3] = {new MonsterA, new MonsterB, new MonsterC};
+    const int monsterSize = 3;
+    BaseMonster*  monsters[monsterSize] = {new MonsterA, new MonsterB, new MonsterC};
 
     for(int i = 0; i < monsterSize; i++){
         monsters[i]->attack();
@@ -27,11 +27,11 @@ int main() {
     mc->attackNoPolymorphism();
     mc->moveNoPolymorphism();
 
-    for(int i = 0; i < monsters.size(); i++) {
+    for(int i = 0; i < monsterSize; i++) {
         delete monsters[i];
     }
     delete ma;
     delete mb;
     delete mc;
     return 0;
-}
+    }

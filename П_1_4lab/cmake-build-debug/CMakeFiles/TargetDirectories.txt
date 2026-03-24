@@ -1,0 +1,3 @@
+C:/Users/user/Documents/3кв/П_1_4lab/cmake-build-debug/CMakeFiles/_1_4lab.dir
+C:/Users/user/Documents/3кв/П_1_4lab/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/user/Documents/3кв/П_1_4lab/cmake-build-debug/CMakeFiles/rebuild_cache.dir

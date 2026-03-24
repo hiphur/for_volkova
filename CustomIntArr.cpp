@@ -16,7 +16,7 @@ private:
     int m_capacity;
     //метод для расширения
     void changeCapacity();
-    //TODO: доделать
+
     void swap(const int index1, const int index2);
 public:
     //заполняет массив нулями
